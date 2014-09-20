@@ -7,6 +7,7 @@ require.config({
         'underscore': 'bower_components/lodash/dist/lodash.underscore',
         'when': 'bower_components/when',
         'backbone': 'bower_components/backbone/backbone',
+        'lodash': 'bower_components/lodash/dist/lodash.min',
         'text': 'bower_components/requirejs-text/text'
     },
     shim: {
@@ -33,6 +34,9 @@ require([
     "use strict";
 
     console.log("top of main");
-    console.log(models);
+    var entries = new models.Entries();
+    entries.fetch();
+    console.log("fetched entries");
+    console.log(entries);
 
 });
