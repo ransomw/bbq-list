@@ -25,11 +25,11 @@ require.config({
 });
 
 require([
-    'js/models'
-    // 'js/list_json'
+    'js/models',
+		'js/views'
 ], function (
-    models
-    // list_json
+    models,
+		views
 ) {
     "use strict";
 
@@ -38,5 +38,15 @@ require([
     entries.fetch();
     console.log("fetched entries");
     console.log(entries);
+
+		var list_view = new views.List({
+				model: entries,
+				el: document.getElementById('sandy-list')
+		});
+
+		console.log("instantated list view");
+		console.log(list_view);
+		console.log("calling list view render");
+		list_view.render();
 
 });
