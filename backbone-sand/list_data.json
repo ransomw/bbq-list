@@ -1,0 +1,16 @@
+{
+    "entries": [
+        {
+            "title": "Why's Poigniant Guide to Ruby",
+            "author": "_why",
+            "description": "cartoon foxes and end of the world, oh my!",
+            "link": "http://mislav.uniqpath.com/poignant-guide/"
+        },
+        {
+            "title": "SICP",
+            "author": "Abelson and Sussman",
+            "description": "they don't make them like this anymore",
+            "link": "http://mitpress.mit.edu/sicp/full-text/book/book.html"
+        }
+    ]
+}
