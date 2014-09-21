@@ -39,21 +39,33 @@ require([
     console.log("fetched entries");
     console.log(entries);
 
-    var list_view = new views.List({
-        model: entries,
-        el: document.getElementById('sandy-list')
-    });
+    var render_list = function (entries_collection) {
+        var list_view = new views.List({
+            model: entries_collection,
+            el: document.getElementById('sandy-list')
+        });
 
-    console.log("instantated list view");
-    console.log(list_view);
-    console.log("calling list view render");
-    list_view.render();
+        console.log("instantated list view");
+        console.log(list_view);
+        console.log("calling list view render");
+        list_view.render();
+    };
+
+    render_list(entries);
 
     document.getElementById('search-button')
         .onclick = function () {
             var search_text = document.getElementById('search-text')
                     .value.trim();
             console.log("got search text '" + search_text + "'");
+            if (search_text === '') {
+                render_list(entries);
+            } else {
+                render_list(new models.Entries(entries.filter(function (model) {
+                    return model.get('title').toLowerCase()
+                        .indexOf(search_text.toLowerCase()) != -1;
+                })));
+            }
         };
 
 });
