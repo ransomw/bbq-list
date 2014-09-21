@@ -26,10 +26,10 @@ require.config({
 
 require([
     'js/models',
-		'js/views'
+    'js/views'
 ], function (
     models,
-		views
+    views
 ) {
     "use strict";
 
@@ -39,14 +39,21 @@ require([
     console.log("fetched entries");
     console.log(entries);
 
-		var list_view = new views.List({
-				model: entries,
-				el: document.getElementById('sandy-list')
-		});
+    var list_view = new views.List({
+        model: entries,
+        el: document.getElementById('sandy-list')
+    });
 
-		console.log("instantated list view");
-		console.log(list_view);
-		console.log("calling list view render");
-		list_view.render();
+    console.log("instantated list view");
+    console.log(list_view);
+    console.log("calling list view render");
+    list_view.render();
+
+    document.getElementById('search-button')
+        .onclick = function () {
+            var search_text = document.getElementById('search-text')
+                    .value.trim();
+            console.log("got search text '" + search_text + "'");
+        };
 
 });
