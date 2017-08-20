@@ -1,0 +1,83 @@
+/*  MS BBQ Trail - BBQ Joint List Stylesheet */
+@font-face {
+  font-family: 'CuprumFFURegular';
+  src: url('Cuprum-webfont.eot');
+  src: local('☺'), url('Cuprum-webfont.woff') format('woff'), url('Cuprum-webfont.ttf') format('truetype'), url('Cuprum-webfont.svg#webfontKLktnWy4') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  }
+table {
+  display: block;
+  position: relative;
+  float: left;
+  border-collapse: collapse;
+  background: lemonchiffon;
+  }  
+thead {
+  color: maroon;
+  }
+tbody {
+  color: black;
+  }
+th, td {
+  text-align: center;
+  border: 2.5px solid black;  
+  }
+td {
+  padding: 0.25em;
+  }  
+th {
+  padding: 0.25em;
+  }
+#bbqjoints {
+  text-align: center;
+  width: auto;
+  padding: 0;
+  margin: auto;
+  }   
+#categories {
+  display: block;
+  position: relative;
+  float: right;
+  width: 30em;
+  background: lemonchiffon;
+  border-width: 0.2em;
+  border-style: solid;
+  border-color: black;
+  margin-left: auto;
+  margin-right: 2em;
+  margin-top: 0;
+  margin-bottom: .75em;
+  text-align: center;
+  padding: .5em;
+  }  
+#county {
+  width: 4em;
+  }
+#group {
+  width: 3em;
+  }
+#name {
+  width: 7em;
+  }
+#phone {
+  width: 6em;
+  }
+#jointshead {
+  font-family: CuprumFFURegular, tahoma, "times new roman", serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  }
+#jointsbody {
+  font-family: CuprumFFURegular, tahoma, "times new roman", serif;
+  font-size: 1.25em;
+  }
+.group1 {
+  color: green;
+  }
+.group2 {
+  color: red;
+  }
+.group3 {
+  color: blue;
+}

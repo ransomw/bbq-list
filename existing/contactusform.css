@@ -1,0 +1,58 @@
+/*  MS BBQ Trail - Contact Us Form Stylesheet */
+@font-face {
+  font-family: 'CuprumFFURegular';
+  src: url('Cuprum-webfont.eot');
+  src: local('☺'), url('Cuprum-webfont.woff') format('woff'), url('Cuprum-webfont.ttf') format('truetype'), url('Cuprum-webfont.svg#webfontKLktnWy4') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  }    
+form {
+  background: maroon;
+  }
+#additionalinfo {
+  display: block;
+  position: relative;
+  color: lemonchiffon;
+  margin: 0.5em;
+  }    
+#contact {
+  display: block;
+  position: relative;   
+  font-size: 1.5em;
+  color: lemonchiffon;
+  border: 0.125em solid black;
+  margin: 0em 4em 1em 4em;
+  }
+#contactinfo {
+  display: block;
+  position: relative;
+  color: lemonchiffon;
+  margin: 0.5em;
+  }  
+#contactinfo label {
+  display: block;
+  position: relative;
+  color: lemonchiffon;
+  margin: 12px 0;
+  }
+#contactinfo input {
+  position: absolute;
+  left:  100px;
+  }  
+#nameinput, #emailinput {
+  width: 30em;
+  }  
+#phoneinput {
+  width: 12em; 
+  }  
+#submit {
+  background: lemonchiffon;
+  font-size: 1em;
+  margin: 0.5em;
+  }
+#submitbutton {
+  border: none;
+  background: maroon;
+  padding: 0.5em 0 0 0;
+  text-align: center;
+  }  
